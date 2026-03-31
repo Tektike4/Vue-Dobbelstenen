@@ -15,10 +15,10 @@ const dice = reactive({
     5: 0,
     6: 0,
 });
+    
     function resetDice() {
     Object.assign(dice, {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0});
 }
-
 
 const throwdice = () => {
         resetDice();
