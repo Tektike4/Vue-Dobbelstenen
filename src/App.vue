@@ -15,8 +15,13 @@ const dice = reactive({
     5: 0,
     6: 0,
 });
+    function resetDice() {
+    Object.assign(dice, {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0});
+}
+
 
 const throwdice = () => {
+        resetDice();
     for (let i = 0; i < 8; i++) {
         let randomNumber = Math.floor(Math.random() * 6 + 1);
         dice[randomNumber] += 1;
