@@ -16,7 +16,7 @@ const dice = reactive({
     6: 0,
 });
 
-const throwdice = () => {
+const throwDice = () => {
     for (let i = 0; i < 8; i++) {
         let randomNumber = Math.floor(Math.random() * 6 + 1);
         dice[randomNumber] += 1;
